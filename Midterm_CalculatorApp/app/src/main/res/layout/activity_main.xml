@@ -6,6 +6,7 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
+    //heading textview
     <TextView
         android:id="@+id/Title_view"
         android:layout_width="match_parent"
@@ -17,6 +18,7 @@
         android:textSize="35sp"
         android:textStyle="bold" />
 
+    //contains linearlayout(which further contains all elements)
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -24,15 +26,15 @@
         android:padding="10dp">
 
         <EditText
-            android:id="@+id/edt1"
+            android:id="@+id/resultET"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="right"
-            android:textSize="30sp"
-            android:text="23"
-            android:padding="10dp"/>
+            android:textSize="40dp"
+            android:padding="10dp"
+            android:textStyle="bold"/>
 
-
+        //contains first row
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -45,113 +47,130 @@
                 android:layout_height="wrap_content"
                 android:text="1"
                 android:layout_weight="1"
-                android:layout_margin="5dp"/>
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="2"
-            android:layout_weight="1"
-            android:layout_margin="5dp"/>
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="3"
-            android:layout_weight="1"
-            android:layout_margin="5dp"/>
+                android:layout_margin="5dp"
+                android:textSize="40dp"/>
 
             <Button
-                android:id="@+id/buttonadd"
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:textSize="40dp"/>
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:textSize="40dp"/>
+
+            <Button
+                android:id="@+id/addButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="+"
                 android:layout_weight="1"
-                android:layout_margin="5dp"/>
+                android:layout_margin="5dp"
+                android:textSize="40dp"/>
 
         </LinearLayout>
+        //end of first row elements
 
+        //contains second row elements
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="4"
-            android:layout_weight="1"
-            android:layout_margin="5dp"/>
-
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="5"
-            android:layout_weight="1"
-            android:layout_margin="5dp"/>
-
-        <Button
-            android:id="@+id/button6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="6"
-            android:layout_weight="1"
-            android:layout_margin="5dp"/>
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:textSize="40dp"/>
 
             <Button
-                android:id="@+id/buttonsub"
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:textSize="40dp"/>
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:textSize="40dp"/>
+
+            <Button
+                android:id="@+id/subButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="-"
                 android:layout_weight="1"
-                android:layout_margin="5dp"/>
+                android:layout_margin="5dp"
+                android:textSize="40dp"/>
 
         </LinearLayout>
+        //end of second row elements
 
+        //contains third row elements
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/button7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="7"
-            android:layout_weight="1"
-            android:layout_margin="5dp"/>
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:textSize="40dp"/>
 
-        <Button
-            android:id="@+id/button8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="8"
-            android:layout_weight="1"
-            android:layout_margin="5dp"/>
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:textSize="40dp"/>
 
-        <Button
-            android:id="@+id/button9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="9"
-            android:layout_weight="1"
-            android:layout_margin="5dp"/>
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:textSize="40dp"/>
 
-
-        <Button
-            android:id="@+id/buttonmul"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="*"
-            android:layout_weight="1"
-            android:layout_margin="5dp"/>
+            <Button
+                android:id="@+id/mulButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:textSize="40dp"/>
 
         </LinearLayout>
+        //end of third row elements
 
+        //contains elements of forth row
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -163,48 +182,56 @@
                 android:layout_height="wrap_content"
                 android:text="0"
                 android:layout_weight="1"
-                android:layout_margin="5dp"/>
+                android:layout_margin="5dp"
+                android:textSize="40dp"/>
 
             <Button
-            android:id="@+id/button10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="."
-            android:layout_weight="1"
-                android:layout_margin="5dp"/>
+                android:id="@+id/decimalButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="."
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:textSize="40dp"/>
 
 
-        <Button
-            android:id="@+id/buttonC"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="C"
-            android:layout_weight="1"
-            android:layout_margin="5dp"/>
+            <Button
+                android:id="@+id/clearButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:textSize="40dp"/>
 
-        <Button
-            android:id="@+id/buttondiv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="/"
-            android:layout_weight="1"
-            android:layout_margin="5dp"/>
+            <Button
+                android:id="@+id/divButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:textSize="40dp"/>
 
         </LinearLayout>
+        //end of forth row elements
 
+        //contains equalsto button
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-
             <Button
-            android:id="@+id/buttoneql"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="=" />
+                android:id="@+id/equalButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="="
+                android:textSize="40dp"/>
 
         </LinearLayout>
 
     </LinearLayout>
+    //end of layout which contains all the layouts
 
+    //end of main layout
 </LinearLayout>
