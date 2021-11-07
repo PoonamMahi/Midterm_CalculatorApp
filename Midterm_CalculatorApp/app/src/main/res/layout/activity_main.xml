@@ -223,10 +223,31 @@
             android:orientation="horizontal">
             <Button
                 android:id="@+id/equalButton"
-                android:layout_width="match_parent"
+                android:layout_width="160dp"
                 android:layout_height="wrap_content"
                 android:text="="
+                android:layout_weight="1"
+                android:layout_margin="5dp"
                 android:textSize="40dp"/>
+
+            <Button
+                android:id="@+id/modButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="%"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:textSize="40dp"/>
+
+            <Button
+                android:id="@+id/squareButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="x2"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:textSize="40dp"/>
+
 
         </LinearLayout>
 

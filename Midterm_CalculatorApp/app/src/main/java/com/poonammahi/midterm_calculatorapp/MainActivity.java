@@ -11,7 +11,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     EditText ETResult; //setting edittext globally
     float valueOne, valueTwo; //taking 2 float type variable
-    boolean isAddition, isSubtract, isMultiplication, isDivision; //taking boolean variable for all operations
+    int valueThree=2;
+    boolean isAddition, isSubtract, isMultiplication, isDivision,isModulus,isSquare; //taking boolean variable for all operations
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +36,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button bSub=findViewById(R.id.subButton);
         Button bMul=findViewById(R.id.mulButton);
         Button bDiv=findViewById(R.id.divButton);
+        Button bMod=findViewById(R.id.modButton);
+        Button bSq=findViewById(R.id.squareButton);
         Button bEqual=findViewById(R.id.equalButton);
 
         ETResult=findViewById(R.id.resultET);
@@ -56,6 +59,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         bSub.setOnClickListener(this);
         bMul.setOnClickListener(this);
         bDiv.setOnClickListener(this);
+        bMod.setOnClickListener(this);
+        bSq.setOnClickListener(this);
         bEqual.setOnClickListener(this);
 
 
@@ -138,6 +143,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 isDivision = true;
                 ETResult.setText(null);
                 break;
+            case R.id.modButton:
+                valueOne = Float.parseFloat(ETResult.getText() + "");
+                isModulus = true;
+                ETResult.setText(null);
+                break;
+            case R.id.squareButton:
+                valueOne = Float.parseFloat(ETResult.getText() + "");
+                isSquare = true;
+                ETResult.setText(Math.pow(valueOne ,valueThree) + "");
+                break;
             case R.id.equalButton:
                 valueTwo = Float.parseFloat(ETResult.getText() + "");
 
@@ -146,21 +161,34 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     isAddition = false;
                 }
 
-                if (isSubtract == true) {
+                else if (isSubtract == true) {
                     ETResult.setText(valueOne - valueTwo + "");
                     isSubtract = false;
                 }
 
-                if (isMultiplication == true) {
+                else if (isMultiplication == true) {
                     ETResult.setText(valueOne * valueTwo + "");
                     isMultiplication = false;
                 }
 
-                if (isDivision == true) {
+                else if (isDivision == true) {
                     ETResult.setText(valueOne / valueTwo + "");
                     isDivision = false;
                 }
+
+                else if (isModulus == true) {
+                    ETResult.setText(valueOne % valueTwo + "");
+                    isModulus = false;
+                }
+
+                else if (isSquare == true) {
+                    valueOne = Float.parseFloat(ETResult.getText() + "");
+                    ETResult.setText(Math.pow(valueOne ,valueThree) + "");
+                    //isSquare = false;
+                }
                 break;
+
+
         }
 
     }
