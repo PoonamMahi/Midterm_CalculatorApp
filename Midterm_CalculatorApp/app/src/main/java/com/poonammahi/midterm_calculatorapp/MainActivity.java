@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         //declare elements and finding using Id's
-        Button bZero=findViewById(R.id.button0)
+        Button bZero=findViewById(R.id.button0);
         Button bOne=findViewById(R.id.button1);
         Button bTwo=findViewById(R.id.button2);
         Button bThree=findViewById(R.id.button3);
